@@ -1,6 +1,8 @@
 "use client"
 import Image from 'next/image';
 import AnimatedText from './component/Animatedtext';
+import Timeline from "./timeline/Timeline"
+import Theme from "./themes/Theme"
 import Collapsible from './component/Collapsable';
 export default function Home() {
   return (
@@ -35,6 +37,8 @@ export default function Home() {
 
 
       </div>
+      <Timeline />
+      <Theme />
     </div>
   );
 }
