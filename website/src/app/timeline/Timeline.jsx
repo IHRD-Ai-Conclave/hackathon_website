@@ -25,22 +25,22 @@ const timelineData = [
 
 function Timeline() {
   return (
-    <div className='w-screen h-screen flex  justify-center items-center'>
-      {timelineData.map((item, index) => (
-        <div key={index} className='w-fit h-fit text-blue flex  flex-col justify-center items-center'>
-          <div className='w-fit md:w-[30vh] h-[5vh] flex items-center justify-center'>
-            <h1 className='font-bold text-2xl'>{item.date}</h1>
-          </div>
-          <div className=' w-[50vh] h-[10vh] flex items-center justify-center gap-2 '>
-            <hr className="border-2 w-[10vw]" />
-            <div className="w-4 h-4 rounded-full bg-blue-500"></div>
-            <hr className="border-2 w-[10vw]" />
-          </div>
-          <div className='w-[50vh] h-[10vh] flex items-center justify-center'>
-            <p className='font-semibold text-xl'>{item.description}</p>
-          </div>
-        </div>
-      ))}
+    <div className="w-screen h-[150vh] md:h-screen flex flex-col items-center justify-start m-5">
+      <h1 className="font-bold text-3xl text-center m-5">Timeline</h1>
+      <div className="flex items-center justify-center w-screen">
+        <ol className="relative border-s border-black dark:border-gray-700 h-screen flex flex-col justify-between">
+          {timelineData.map((item, index) => (
+            <li key={index} className="mb-5 ms-4">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{item.date}</time>
+              <h3 className="text-lg font-semibold text-gray-900">{item.description}</h3>
+              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                {/* Add additional details here if needed */}
+              </p>
+            </li>
+          ))}
+        </ol>
+      </div>
     </div>
   );
 }
