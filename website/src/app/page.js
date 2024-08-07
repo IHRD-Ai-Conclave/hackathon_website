@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import AnimatedText from './component/Animatedtext';
-import Timeline from "./timeline/Timeline"
+import Timeline2 from "./timeline/Timeline2"
 //import Timeline from "./timeline/Timeline"
 import Prizes from "./prize/Prizes"
 import Theme from "./themes/Theme"
@@ -9,6 +9,7 @@ import Flipwords from './components/ui/flip-words'
 import Collapsible from './component/Collapsable';
 import Faq from './component/Faq';
 import Footer from './component/Footer'
+
 export default function Home() {
   const words = ["Journey", "Adventure", "Challenge", "Event"];
 
@@ -36,9 +37,10 @@ export default function Home() {
       <h1 className="text-3xl md:text-5xl font-semibold mb-4">Hackathon</h1>
       <div className="mt-4 flex items-center">
         <h1 className="text-3xl md:text-5xl font-semibold mr-4">to</h1>
-        <div className="text-3xl md:text-5xl font-semibold text-blue-500 min-w-[150px]">
-          <Flipwords className="w-full" />
-        </div>
+        <div style={{ position: 'relative' }}> {/* Ensure FlipWords is positioned correctly */}
+      <Flipwords className="text-3xl md:text-5xl font-semibold text-blue-500" />
+    </div>
+       
       </div>
     </div>
     <div
@@ -55,107 +57,31 @@ export default function Home() {
     </div>
   </div>
 
-  <div style={{ height: '3vh' }} className='shadow-lg rounded-lg bg-white dark:bg-black'></div>
-
-  <div className="flex w-full h-23vh pt-vh flex-col items-center justify-center ">
-    <div className="flex justify-center text-center">
-      <h2 className="text-2xl font-light">We partnered with events like</h2>
-    </div>
-    <div className="flex w-1/2 justify-between items-center text-center mt-4 gap-10">
-      <Image src={'/ieee.png'} alt='nsdc' width={200} height={200} />
-      <Image src={'/logo-final.png'} alt='ieee' width={200} height={200} />
-      <Image src={'/ihrd.jpg'} alt='ihrd' width={200} height={200} />
-    </div>
-  </div>
+  <div className="relative">
+  <div
+    style={{ height: '3vh' }}
+    className="bg-white dark:bg-black rounded-b-lg shadow-lg z-10"
+  ></div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <Timeline />
+  <div className="relative flex w-full h-23vh pt-vh flex-col items-center justify-center">
+  {/* Add a shadow effect at the top */}
+  <div className="absolute inset-0 top-0 left-0 right-0 bg-gradient-to-b from-transparent to-gray-800 h-12 z-[-1]"></div>
+  
+  <div className="flex justify-center text-center">
+    <h2 className="text-2xl font-light">We partnered with events like</h2>
+  </div>
+  <div className="flex w-1/2 justify-between items-center text-center mt-4 gap-10">
+    <Image src={'/ieee.png'} alt='nsdc' width={200} height={200} />
+    <Image src={'/logo-final.png'} alt='ieee' width={200} height={200} />
+    <Image src={'/ihrd.jpg'} alt='ihrd' width={200} height={200} />
+  </div>
+</div>
+ 
+</div>
+
+      <Timeline2/>
+     
       <Theme />
       <Prizes />
       <Faq/>
