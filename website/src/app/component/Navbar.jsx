@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full h-16 flex justify-between items-center px-12 shadow-md bg-white">
-      <div className="text-xl font-bold">iedc</div>
+      <div className="text-xl font-bold">nsdc</div>
       <div className="hidden md:flex space-x-8">
         <h2 className="cursor-pointer hover:text-gray-600">About</h2>
         <h2 className="cursor-pointer hover:text-gray-600">Who Should Apply</h2>
