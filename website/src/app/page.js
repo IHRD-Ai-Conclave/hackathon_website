@@ -2,8 +2,11 @@
 import Image from 'next/image';
 import AnimatedText from './component/Animatedtext';
 import Timeline from "./timeline/Timeline"
+//import Timeline from "./timeline/Timeline"
+import Prizes from "./prize/Prizes"
 import Theme from "./themes/Theme"
 import Flipwords from './components/ui/flip-words'
+import Collapsible from './component/Collapsable';
 import Faq from './component/Faq';
 import Footer from './component/Footer'
 export default function Home() {
@@ -48,9 +51,27 @@ export default function Home() {
           <Image src={'/ieee.png'}alt='ieee'width={200}height={200}></Image>
           <Image src={'/ihrd.jpg'}alt='ihrd'width={200}height={200}></Image>
         </div>
+
+        <div style={{width:'70vw',display:'flex',flexDirection:'column',gap:'4vh'}}>
+      <Collapsible title="What is the refund policy?">
+        All purchases are final and non-refundable. However, we offer a 30-day money-back guarantee if you are not
+        satisfied with your purchase. Please contact our support team for more information.
+      </Collapsible>
+      <Collapsible title="How do I contact customer support?">
+        You can reach our customer support team by email at support@example.com or by phone at 1-800-555-1234. Our
+        support team is available Monday through Friday, 9am to 5pm EST.
+      </Collapsible>
+      <Collapsible title="What payment methods do you accept?">
+        We accept all major credit cards, including Visa, Mastercard, American Express, and Discover. We also accept
+        PayPal and Apple Pay.
+      </Collapsible>
+    </div>
+
+
       </div>
       <Timeline />
       <Theme />
+      <Prizes />
       <Faq/>
       <div style={{height:'5vh'}}></div>
       <Footer/>
