@@ -26,7 +26,7 @@ const Footer = () => {
         {/* Contact Information */}
         <div style={{ marginBottom: '1rem' }}>
           <h2 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Contact Us</h2>
-          <p>Email: <a href="mailto:support@example.com" style={{ color: '#007bff' }}>support@example.com</a></p>
+          <p>Email: <a href="mailto:aiconclave91@gmail.com" style={{ color: '#007bff' }}>aionclave91@gmail.com</a></p>
           <p>Phone: <a href="tel:+1234567890" style={{ color: '#007bff' }}>+1 (234) 567-890</a></p>
         </div>
 
