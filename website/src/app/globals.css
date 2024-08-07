@@ -14,16 +14,52 @@
 
 
 @keyframes float {
-  0%{
-  transform: translateY(3%);
+  0% {
+    transform: translateY(0) translateX(0);
   }
-  50%{
-    transform: translateY(-6%);
+  25% {
+    transform: translateY(-6%) translateX(-2%);
   }
-  100%{
-    transform: translateY(3%);
+  50% {
+    transform: translateY(-10%) translateX(2%);
+  }
+  75% {
+    transform: translateY(-6%) translateX(-2%);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
   }
 }
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
   color: black;

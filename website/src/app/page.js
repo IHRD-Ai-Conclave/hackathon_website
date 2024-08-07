@@ -35,7 +35,7 @@ export default function Home() {
       <h1 className="text-3xl md:text-5xl font-semibold mb-4">Conclave</h1>
       <h1 className="text-3xl md:text-5xl font-semibold mb-4">Hackathon</h1>
       <div className="mt-4 flex items-center">
-        <h1 className="text-3xl md:text-5xl font-semibold mb-4 mr-4">to</h1>
+        <h1 className="text-3xl md:text-5xl font-semibold mr-4">to</h1>
         <div className="text-3xl md:text-5xl font-semibold text-blue-500 min-w-[150px]">
           <Flipwords className="w-full" />
         </div>
@@ -51,7 +51,7 @@ export default function Home() {
       }}
       className="hidden md:block"
     >
-      <Image id="Floatimage" src={'/programmer.jpg'} alt="pic" height={470} width={470} />
+      <Image id="Floatimage" src={'/girl.png'} alt="pic" height={500} width={500} />
     </div>
   </div>
 
