@@ -20,7 +20,7 @@ export default function Home() {
           <Image src={'/ihrd.jpg'}alt='ihrd'width={200}height={200}></Image>
         </div>
 
-        <div style={{width:'70vw',display:'flex',flexDirection:'column',gap:'4vh'}}>
+    <div style={{width:'70vw',display:'flex',flexDirection:'column',gap:'4vh'}}>
       <Collapsible title="What is the refund policy?">
         All purchases are final and non-refundable. However, we offer a 30-day money-back guarantee if you are not
         satisfied with your purchase. Please contact our support team for more information.
