@@ -38,7 +38,7 @@ export default function Home() {
       </div>
     </div>
     <div style={{width:'50vw', paddingTop:'4vh',paddingBottom:'4vh',overflow:'hidden', borderRadius:'30px'}}>
-      <Image src={'/pic.jpeg'} alt='pic' height={470} width={470}></Image>
+      <Image id="Floatimage" src={'/pic.jpeg'} alt='pic' height={470} width={470}></Image>
     </div>
     </div>
       <div style={{height:'3vh'}}></div>
