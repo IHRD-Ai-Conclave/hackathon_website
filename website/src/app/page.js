@@ -51,7 +51,7 @@ export default function Home() {
       }}
       className="hidden md:block"
     >
-      <Image id="Floatimage" src={'/programmer.jpg'} alt="pic" height={470} width={470} />
+      <Image src={'/pic.jpeg'} alt="pic" height={470} width={470} />
     </div>
   </div>
 
