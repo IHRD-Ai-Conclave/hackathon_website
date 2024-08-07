@@ -8,15 +8,27 @@
   --background-end-rgb: 255, 255, 255;   /* Changed to white */
 }
 
+#Myimage{
+  animation: float infinite 5s linear;
+}
 
-
-
+@keyframes float{
+  0%{
+    transform:translate(3%);
+  }
+  50%{
+    transform:translate(-6%);
+  }
+  100%{
+    transform:translate(3%);
+  }
+}
 
 
 
 body {
   color: black;
- background-color: white;
+  background-color: white;
 }
 
 @layer utilities {
