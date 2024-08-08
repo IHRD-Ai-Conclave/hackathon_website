@@ -14,16 +14,92 @@
 
 
 @keyframes float {
-  0%{
-  transform: translateY(3%);
+  0% {
+    transform: translateY(0) translateX(0);
   }
-  50%{
-    transform: translateY(-6%);
+  25% {
+    transform: translateY(-6%) translateX(-2%);
   }
-  100%{
-    transform: translateY(3%);
+  50% {
+    transform: translateY(-10%) translateX(2%);
+  }
+  75% {
+    transform: translateY(-6%) translateX(-2%);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
   }
 }
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+ol {
+  counter-reset: step;
+}
+
+li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+li:before {
+  content: counter(step);
+  counter-increment: step;
+  position: absolute;
+  left: -1rem;
+  top: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
   color: black;
