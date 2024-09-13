@@ -82,7 +82,7 @@ export default function Home() {
   <div className="absolute inset-0 top-0 left-0 right-0 bg-gradient-to-b from-transparent to-gray-800 h-12 z-[-1]"></div>
   
   <div className="flex justify-center text-center">
-    <h2 className="text-2xl font-light">We partnered with events like</h2>
+    <h2 className="text-2xl font-light">Event Partners</h2>
   </div>
   <div className="flex flex-col md:flex-row w-full md:w-1/2 justify-between items-center text-center mt-4 gap-10">
   <Image src={'/ieee.png'} alt='ieee' width={200} height={200} />
@@ -103,7 +103,7 @@ export default function Home() {
 
     
      </Infinite>
-      <Theme />
+      <Theme/>
 
       <Prizes />
       <Faq/>

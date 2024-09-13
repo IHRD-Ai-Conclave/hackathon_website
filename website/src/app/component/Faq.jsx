@@ -3,7 +3,7 @@ import Collapsible from './Collapsable'
 
 const Faq = () => {
   return (
-    <div style={{width:'100vw',display:'flex',alignContent:'center',justifyContent:'center',flexDirection:'column',alignItems:'center',gap:'2vh'}}>
+    <div id='faq' style={{width:'100vw',display:'flex',alignContent:'center',justifyContent:'center',flexDirection:'column',alignItems:'center',gap:'2vh'}}>
         <div style={{fontSize:'40px'}}><h1>Frequently Asked Questions</h1></div>
     <div style={{width:'70vw',display:'flex',flexDirection:'column',gap:'4vh'}}>
 <Collapsible title="What is the duration of the hackathon?">
