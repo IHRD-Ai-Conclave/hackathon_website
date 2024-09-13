@@ -57,7 +57,7 @@ function Timeline() {
   }, []);
 
   return (
-    <div className="w-screen h-[150vh] md:h-screen flex flex-col items-center justify-start m-5">
+    <div className="w-screen h-[150vh] md:h-auto flex flex-col items-center justify-start m-5 ">
       <h1 className="font-bold text-3xl text-center m-5">Timeline</h1>
       <div className="flex items-center justify-center w-screen">
         <ol className="relative border-l border-black dark:border-gray-700 h-screen flex flex-col justify-between pl-6">

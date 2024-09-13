@@ -11,6 +11,7 @@ import Faq from './component/Faq';
 import Footer from './component/Footer'
 import Infinite from'./component/Infinite'
 import Link from 'next/link';
+import RegistrationFee from './RegistrationFees/RegistrationFee';
 export default function Home() {
   const words = ["Journey", "Adventure", "Challenge", "Event"];
 
@@ -89,13 +90,14 @@ export default function Home() {
 </div>
  
 </div>
+       <RegistrationFee />
 
       <Timeline2/>
-     <Infinite>
+      <Infinite>
 
     
      </Infinite>
-   <Theme/>
+      <Theme />
 
       <Prizes />
       <Faq/>
