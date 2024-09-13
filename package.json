@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/node": "^22.1.0"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.3"
   }
 }
