@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import AnimatedText from './component/Animatedtext';
-import Timeline2 from "./timeline/Timeline2"
+import Timeline3 from "./timeline/Timeline3"
 //import Timeline from "./timeline/Timeline"
 import Prizes from "./prize/Prizes"
 import Theme from "./themes/Theme"
@@ -11,11 +11,13 @@ import Faq from './component/Faq';
 import Footer from './component/Footer'
 import Infinite from'./component/Infinite'
 import Link from 'next/link';
+import Code from'./Loaders/Code'
 export default function Home() {
   const words = ["Journey", "Adventure", "Challenge", "Event"];
 
   return (
     <div className="flex flex-col">
+      
         <div className="w-full dark:bg-black bg-white relative flex flex-col items-center justify-center">
   {/* Radial gradient for the container to give a faded look */}
   <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,_rgba(0,0,0,0.5),transparent)]"></div>
@@ -35,8 +37,7 @@ export default function Home() {
   className="w-full md:w-1/2 p-8 md:p-16 md:pl-32"
 >
   <h1 className="text-3xl md:text-5xl font-semibold mb-4">Join the</h1>
-  <h1 className="text-3xl md:text-5xl font-semibold mb-4">Gen AI</h1>
-  <h1 className="text-3xl md:text-5xl font-semibold mb-4">Conclave</h1>
+  <h1 className="text-3xl md:text-5xl font-semibold mb-4"> AI Samasya</h1>
   <h1 className="text-3xl md:text-5xl font-semibold mb-4">Hackathon</h1>
   <div className="mt-4 flex items-center">
     <h1 className="text-3xl md:text-5xl font-semibold mr-4">to</h1>
@@ -81,16 +82,16 @@ export default function Home() {
   <div className="flex justify-center text-center">
     <h2 className="text-2xl font-light">We partnered with events like</h2>
   </div>
-  <div className="flex w-1/2 justify-between items-center text-center mt-4 gap-10">
-    <Image src={'/ieee.png'} alt='nsdc' width={200} height={200} />
-    <Image src={'/logo-final.png'} alt='ieee' width={200} height={200} />
-    <Image src={'/ihrd.jpg'} alt='ihrd' width={200} height={200} />
-  </div>
+  <div className="flex flex-col md:flex-row w-full md:w-1/2 justify-between items-center text-center mt-4 gap-10">
+  <Image src={'/ieee.png'} alt='ieee' width={200} height={200} />
+  <Image src={'/logo-final.png'} alt='nsdc' width={200} height={200} />
+  <Image src={'/ihrd.jpg'} alt='ihrd' width={200} height={200} />
+</div>
 </div>
  
 </div>
 
-      <Timeline2/>
+      <Timeline3/>
      <Infinite>
 
     
