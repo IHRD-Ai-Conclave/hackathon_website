@@ -76,7 +76,7 @@ const Prizes = () => {
           <h3 className="text-xl font-medium text-white">2nd Place</h3>
           <p className="mt-2 text-3xl text-white font-bold">₹30,000</p>
           <p className="mt-4 text-base text-gray-200">
-            The runner-up receives a prize of ₹30,000 along with a medal and a certificate.
+            The runner-up receives a prize of ₹30,000 along with a certificate.
           </p>
         </div>
         
@@ -84,7 +84,7 @@ const Prizes = () => {
           <h3 className="text-2xl font-medium text-white">1st Place</h3>
           <p className="mt-2 text-3xl text-white font-bold">₹50,000</p>
           <p className="mt-4 text-base text-white">
-            The winner receives a grand prize of ₹50,000 along with a trophy and a certificate.
+            The winner receives a grand prize of ₹50,000 along with a certificate.
           </p>
         </div>
         

@@ -76,7 +76,7 @@ export default function TimelineDemo() {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-[#003399]">
+    <div id="timeline" className="w-full overflow-hidden bg-[#003399]">
       <Timeline data={data} />
     </div>
   );
