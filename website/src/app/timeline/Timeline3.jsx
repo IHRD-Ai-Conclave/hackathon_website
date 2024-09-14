@@ -1,6 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import { Timeline } from '../components/ui/timeline'
+import { Timeline } from "../components/ui/timeline";
 
 export default function TimelineDemo() {
   const data = [
@@ -8,10 +7,12 @@ export default function TimelineDemo() {
       title: "14/08/2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient font-bold text-base md:text-lg mb-4 text-center">
+           <u>
             Registration Starts
+            </u>
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
             Form a team of 2-4 and register.
           </p>
         </div>
@@ -21,7 +22,7 @@ export default function TimelineDemo() {
       title: "06/09/2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
             Registration form closes
           </p>
         </div>
@@ -31,7 +32,7 @@ export default function TimelineDemo() {
       title: "13/09/2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
             Selected teams receive emails
           </p>
         </div>
@@ -41,7 +42,7 @@ export default function TimelineDemo() {
       title: "17/09/2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
             Selected Teams to pay the registration fee of 500
           </p>
         </div>
@@ -51,7 +52,7 @@ export default function TimelineDemo() {
       title: "09/10/2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
             Hackathon begins
           </p>
         </div>
@@ -61,11 +62,13 @@ export default function TimelineDemo() {
       title: "10/10/2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
             Hackathon ends
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-base md:text-lg font-normal mb-4 text-center">
+          <p className="text-gradient font-bold text-base md:text-lg mb-4 text-center">
+            <u>
             Winners announced
+            </u>
           </p>
         </div>
       ),
@@ -73,7 +76,7 @@ export default function TimelineDemo() {
   ];
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden bg-[#003399]">
       <Timeline data={data} />
     </div>
   );

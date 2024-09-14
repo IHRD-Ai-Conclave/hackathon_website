@@ -3,19 +3,19 @@ import confetti from "canvas-confetti";
 
 const Prizes = () => {
   const sectionRef = useRef(null);
-  const [hasFired, setHasFired] = useState(false); 
-
+  const [hasFired, setHasFired] = useState(false);
   
   const fireConfetti = useCallback(() => {
-    if (hasFired) return; 
+    if (hasFired) return;
+    
     setHasFired(true);
     
-    const end = Date.now() + 3 * 1000; 
-    const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
-
+    const end = Date.now() + 3 * 1000;
+    const colors = ["#66CC33", "#003399", "#FFFFFF"];
+    
     const frame = () => {
       if (Date.now() > end) return;
-
+      
       confetti({
         particleCount: 2,
         angle: 60,
@@ -32,13 +32,12 @@ const Prizes = () => {
         origin: { x: 1, y: 0.5 },
         colors: colors,
       });
-
+      
       requestAnimationFrame(frame);
     };
-
+    
     frame();
   }, [hasFired]);
-
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -47,13 +46,13 @@ const Prizes = () => {
           fireConfetti();
         }
       },
-      { threshold: 0.5 } 
+      { threshold: 0.5 }
     );
-
+    
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-
+    
     return () => {
       if (sectionRef.current) {
         observer.unobserve(sectionRef.current);
@@ -71,29 +70,29 @@ const Prizes = () => {
           Here are the prizes for the top three positions.
         </p>
       </div>
-
-      <div className="max-w-9xl md:h-[60vh] mx-auto mt-10 grid sm:grid-cols-3 text-center items-center">
-        <div className="bg-gray-100 h-fit md:h-[50vh] p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
-          <h3 className="text-3xl font-bold text-gray-800">2nd Place</h3>
-          <p className="mt-2 text-lg text-gray-600">₹30,000</p>
-          <p className="mt-4 text-base text-gray-500">
-            The runner-up receives a prize of ₹500 along with a medal and a certificate.
+      
+      <div className="max-w-9xl md:h-[60vh] mx-auto mt-10 grid sm:grid-cols-3 text-center items-center gap-6">
+        <div className="bg-[#003399] h-[50vh] p-10 rounded-lg shadow-md flex flex-col items-center justify-center">
+          <h3 className="text-xl font-medium text-white">2nd Place</h3>
+          <p className="mt-2 text-3xl text-white font-bold">₹30,000</p>
+          <p className="mt-4 text-base text-gray-200">
+            The runner-up receives a prize of ₹30,000 along with a medal and a certificate.
           </p>
         </div>
-
-        <div className="bg-blue-500 h-[40vh] md:h-full p-10 rounded-lg shadow-xl drop-shadow-xl flex flex-col items-center justify-center">
-          <h3 className="text-4xl font-bold text-white">1st Place</h3>
-          <p className="mt-2 text-lg text-white">₹50,000</p>
+        
+        <div className="bg-[#66CC33] h-[70vh]  p-10 rounded-lg shadow-xl drop-shadow-xl flex flex-col items-center justify-center">
+          <h3 className="text-2xl font-medium text-white">1st Place</h3>
+          <p className="mt-2 text-3xl text-white font-bold">₹50,000</p>
           <p className="mt-4 text-base text-white">
-            The winner receives a grand prize of ₹1000 along with a trophy and a certificate.
+            The winner receives a grand prize of ₹50,000 along with a trophy and a certificate.
           </p>
         </div>
-
-        <div className="bg-gray-100 h-[50vh] p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
-          <h3 className="text-2xl font-bold text-gray-800">3rd Place</h3>
-          <p className="mt-2 text-lg text-gray-600">₹20,000</p>
-          <p className="mt-4 text-base text-gray-500">
-            The third-place winner receives a prize of ₹250 along with a certificate.
+        
+        <div className="bg-[#003399] h-[50vh] p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
+          <h3 className="text-xl font-medium text-white">3rd Place</h3>
+          <p className="mt-2 text-3xl text-white font-bold">₹20,000</p>
+          <p className="mt-4 text-base text-gray-200">
+            The third-place winner receives a prize of ₹20,000 along with a certificate.
           </p>
         </div>
       </div>

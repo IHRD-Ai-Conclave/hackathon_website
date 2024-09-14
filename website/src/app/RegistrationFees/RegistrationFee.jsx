@@ -9,7 +9,7 @@ const RegistrationFee = () => {
       <div className="mt-4 text-center">
         <p className="text-4xl font-bold text-primary text-green-600 m-2">₹500</p>
    
-        <p className="text-gray-600 mb-4">  The registration fee is only required for the top 10 qualifiers based on their ideas.
+        <p className="text-gray-600 mb-4"> Registration fees is only required for the selected teams after shortlisting.
 </p>
         <div className="text-center">
         </div>
