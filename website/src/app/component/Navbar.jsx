@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="text-xl font-bold">AI samasya</div>
       <div className="hidden md:flex space-x-8">
         <h2 className="cursor-pointer hover:text-gray-600">About</h2>
-        <a href='#faq' className="cursor-pointer hover:text-gray-600">Faq</a>
+        <a href='#faq' className="cursor-pointer hover:text-gray-600">FAQ</a>
         <a  href ='#timeline'className="cursor-pointer hover:text-gray-600">Timeline</a>
         <a href='#prize' className="cursor-pointer hover:text-gray-600">Why Participate</a>
       </div>
