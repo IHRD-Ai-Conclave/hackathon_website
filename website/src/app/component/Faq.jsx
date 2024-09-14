@@ -19,7 +19,7 @@ Participants should be college students from arts, polytechnic, or engineering b
 
 <Collapsible title="Is this hackathon a standalone program?">
 
-No, the hackathon is part of the IHRD Conclave 2.0.
+No, the hackathon is part of the IHRD GenAI Conclave 2.0.
 </Collapsible>
 
 
