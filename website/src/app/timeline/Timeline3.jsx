@@ -4,68 +4,68 @@ import { Timeline } from "../components/ui/timeline";
 export default function TimelineDemo() {
   const data = [
     {
-      title: "14/08/2024",
+      title: "15-10-2024",
       content: (
-        <div className="flex flex-col items-center">
-          <p className="text-gradient font-bold text-base md:text-lg mb-4 text-center">
+        <div className="flexr">
+          <p className="text-gradient font-bold text-base md:text-lg mb-4 ">
            <u>
             Registration Starts
             </u>
           </p>
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
             Form a team of 2-4 and register.
           </p>
         </div>
       ),
     },
     {
-      title: "06/09/2024",
+      title: "10-11-2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
             Registration form closes
           </p>
         </div>
       ),
     },
     {
-      title: "13/09/2024",
+      title: "15-11-2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
             Selected teams receive emails
           </p>
         </div>
       ),
     },
     {
-      title: "17/09/2024",
+      title: "20-11-2024",
       content: (
         <div className="flex flex-col items-center">
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
-            Selected Teams to pay the registration fee of 500
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
+            Last date to pay the registration fee of 500
           </p>
         </div>
       ),
     },
     {
-      title: "09/10/2024",
+      title: "09-12-2024",
       content: (
-        <div className="flex flex-col items-center">
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
+        <div className="flex flex-col items-center ">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center p-3">
             Hackathon begins
           </p>
         </div>
       ),
     },
     {
-      title: "10/10/2024",
+      title: "10-12-2024",
       content: (
-        <div className="flex flex-col items-center">
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center">
+        <div className="flex flex-col ">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
             Hackathon ends
           </p>
-          <p className="text-gradient font-bold text-base md:text-lg mb-4 text-center">
+          <p className="text-gradient font-bold text-base md:text-lg mb-4 ">
             <u>
             Winners announced
             </u>

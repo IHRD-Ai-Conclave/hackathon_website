@@ -10,7 +10,7 @@ export function PrizeSectionWithConfetti() {
     setHasFired(true);
     
     const end = Date.now() + 3 * 1000; // 3 seconds
-    const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+    const colors = ["#66CC33", "#003399"];
 
     const frame = () => {
       if (Date.now() > end) return;

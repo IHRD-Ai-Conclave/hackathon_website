@@ -17,7 +17,7 @@ export default function Home() {
   const words = ["Journey", "Adventure", "Challenge", "Event"];
   
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="w-full bg-gradient-to-b  dark:to-black relative flex flex-col items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,_rgba(0,0,0,0.5),transparent)]"></div>
