@@ -42,7 +42,7 @@ export const Timeline = ({ data }) => {
               </h3>
             </div>
 
-            <div className="border-2 flex flex-col items-baseline shadow-md relative pl-20 pr-4 md:pl-4 w-full">
+            <div className=" flex flex-col items-baseline relative pl-20 pr-4 md:pl-4 w-full">
               <h3 className="text-xl md:text-3xl md:hidden block  mb-4 text-left font-bold   text-[#003399] dark:text-[#66CC33]">
                 {item.title}
               </h3>

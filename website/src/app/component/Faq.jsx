@@ -17,6 +17,9 @@ const Faq = () => {
         <Collapsible title="Who can participate in the event?">
           Participants should be college students from arts, polytechnic, or engineering backgrounds. The event is open to both beginners and experienced developers.
         </Collapsible>
+        <Collapsible title="what is the selection criteria for shortlisting">
+             Shortlisting will be based on your github profile.
+           </Collapsible>
         <Collapsible title="Is this hackathon a standalone program?">
           No, the hackathon is part of the IHRD GenAI Conclave 2.0.
         </Collapsible>
