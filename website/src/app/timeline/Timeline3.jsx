@@ -33,7 +33,7 @@ export default function TimelineDemo() {
       content: (
         <div className="flex flex-col items-center">
           <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
-            Selected teams receive emails
+            Selected teams receive emails 
           </p>
         </div>
       ),
