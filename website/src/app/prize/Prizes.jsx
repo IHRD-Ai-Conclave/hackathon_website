@@ -79,7 +79,7 @@ const Prizes = () => {
   );
 
   return (
-    <div id="prize" ref={sectionRef} className="bg-white w-screen h-[140vh] py-20 flex items-center">
+    <div id="prize" ref={sectionRef} className="bg-white w-screen h-[140vh] py-20 flex items-center mt-28">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
