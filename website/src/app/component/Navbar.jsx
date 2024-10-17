@@ -34,7 +34,7 @@ const Navbar = () => {
           <h2 className="cursor-pointer hover:text-gray-600">About</h2>
           <a href='#faq' className="cursor-pointer hover:text-gray-600">FAQ</a>
           <a href='#timeline' className="cursor-pointer hover:text-gray-600">Timeline</a>
-          <a href ='pize'className="cursor-pointer hover:text-gray-600">Why Participate</a>
+          <a href ='#prize'className="cursor-pointer hover:text-gray-600">Why Participate</a>
         </div>
       )}
     </nav>
