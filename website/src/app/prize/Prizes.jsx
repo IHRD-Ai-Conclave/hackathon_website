@@ -12,7 +12,7 @@ const Prizes = () => {
     
     setHasFired(true);
     
-    const end = Date.now() + 3 * 1000;
+    const end = Date.now() + 2 * 1000;
     const colors = ["#003399", "#66CC33"];
     
     const frame = () => {
@@ -79,7 +79,8 @@ const Prizes = () => {
   );
 
   return (
-    <div id="prize" ref={sectionRef} className="bg-white w-screen h-[140vh] py-20 flex items-center mt-28">
+<div id="prize" ref={sectionRef} className="bg-white w-screen h-[140vh] md:h-[90vh] py-20 flex items-start mt-3">
+
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -50 }}

@@ -96,7 +96,9 @@ export default function Home() {
       </div>
       
       <RegistrationFee />
-      <div className="flex justify-center text-center">
+     
+          <Prizes />
+          <div className="flex justify-center text-center">
             <h2 className=" font-bold mt-10 text-4xl text-[#003399] dark:text-[#66CC33]">Hackathon Timeline</h2>
           </div>
       <Timeline3/>
@@ -105,7 +107,7 @@ export default function Home() {
   
       <Theme/>
       <div style={{display:'flex',height:'1vh'}}></div>
-      <Prizes />
+     
       <Faq/>
 
      
