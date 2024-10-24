@@ -39,12 +39,12 @@ export default function Home() {
             
           >
             <h1 className="text-3xl md:text-4xl font-semibold mb-4 text-[#003399]">
-          <span>Join the </span>
+          <span>Join The </span>
           <span className="text-[#66CC33]">AI Samasya </span>
           <span>Hackathon </span>
    
           <span>
-            to
+            To
           </span>
           </h1>
           <div style={{ position: 'relative' }}>
@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             <div>
               <Image src={'/govt.png'} alt='ihrd' width={200} height={200} />
-              <p>Government of kerala</p>
+              <p>Government of Kerala</p>
             </div>
           </div>
         </div>
