@@ -15,7 +15,6 @@ import RegistrationFee from './RegistrationFees/RegistrationFee';
 import Banner from './component/Banner'
 
 export default function Home() {
-  const words = ["Journey", "Adventure", "Challenge", "Event"];
   
   return (
     <div className="flex flex-col ">
@@ -89,28 +88,29 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:flex-row w-full md:w-1/2 justify-between items-center text-center mt-4 gap-10">
           
-            <Image src={'/ihrd.jpg'} alt='nsdc' width={200} height={200} />
-            <Image src={'/gvt.png'} alt='ihrd' width={200} height={200} />
+            <div>
+              <Image src={'/ihrd.jpg'} alt='nsdc' width={200} height={200} />
+              <p>IHRD</p>
+            </div>
+            <div>
+              <Image src={'/govt.png'} alt='ihrd' width={200} height={200} />
+              <p>Government of kerala</p>
+            </div>
           </div>
         </div>
       </div>
       
       <RegistrationFee />
-     
-          <Prizes />
+      <Prizes />
           <div className="flex justify-center text-center">
-            <h2 className=" font-bold mt-10 text-4xl text-[#003399] dark:text-[#66CC33]">Hackathon Timeline</h2>
+            <h2 className=" font-bold m-5 text-4xl text-[#003399] dark:text-[#66CC33]">Hackathon Timeline</h2>
           </div>
       <Timeline3/>
       <Infinite>
       </Infinite>
-  
       <Theme/>
       <div style={{display:'flex',height:'1vh'}}></div>
-     
       <Faq/>
-
-     
       <div style={{height:'5vh'}}></div>
       <Footer/>
     </div>

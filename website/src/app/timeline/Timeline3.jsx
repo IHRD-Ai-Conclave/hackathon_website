@@ -4,10 +4,10 @@ import { Timeline } from "../components/ui/timeline";
 export default function TimelineDemo() {
   const data = [
     {
-      title: "15-10-2024",
+      title: "26-10-2024",
       content: (
-        <div className="flexr">
-          <p className="text-gradient font-bold text-base md:text-lg mb-4 ">
+        <div className="flex flex-col">
+          <p className="text-gradient font-bold text-base md:text-lg mb-2 ">
            <u>
             Registration Starts
             </u>
@@ -19,7 +19,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "10-11-2024",
+      title: "12-11-2024",
       content: (
         <div className="flex flex-col items-center">
           <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
@@ -29,7 +29,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "15-11-2024",
+      title: "20-11-2024",
       content: (
         <div className="flex flex-col items-center">
           <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
@@ -39,7 +39,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "20-11-2024",
+      title: "26-11-2024",
       content: (
         <div className="flex flex-col items-center">
           <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
@@ -52,7 +52,7 @@ export default function TimelineDemo() {
       title: "09-12-2024",
       content: (
         <div className="flex flex-col items-center ">
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center p-3">
+          <p className="text-gradient text-base md:text-lg font-medium mb-4 text-center ">
             Hackathon begins
           </p>
         </div>
