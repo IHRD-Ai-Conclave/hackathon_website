@@ -3,7 +3,7 @@ import Collapsible from './Collapsable'
 
 const Faq = () => {
   return (
-    <div id="faq" className="w-full flex flex-col items-center justify-center px-4 py-8 space-y-8">
+    <div id="faq" className="w-full flex flex-col items-center justify-center px-4 py-8 space-y-8 mt-24">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">
         Frequently Asked Questions
       </h1>
@@ -17,6 +17,9 @@ const Faq = () => {
         <Collapsible title="Who can participate in the event?">
           Participants should be college students from arts, polytechnic, or engineering backgrounds. The event is open to both beginners and experienced developers.
         </Collapsible>
+        <Collapsible title="What is the selection criteria for shortlisting?">
+             Shortlisting will be based on your github profile.
+           </Collapsible>
         <Collapsible title="Is this hackathon a standalone program?">
           No, the hackathon is part of the IHRD GenAI Conclave 2.0.
         </Collapsible>

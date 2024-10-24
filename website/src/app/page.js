@@ -12,36 +12,45 @@ import Infinite from'./component/Infinite'
 import Link from 'next/link';
 import Code from'./Loaders/Code'
 import RegistrationFee from './RegistrationFees/RegistrationFee';
+import Banner from './component/Banner'
 
 export default function Home() {
   
   return (
     <div className="flex flex-col ">
-      <div className="w-full bg-gradient-to-b  dark:to-black relative flex flex-col items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,_rgba(0,0,0,0.5),transparent)]"></div>
         
-        <div className="flex flex-col md:flex-row w-full dark:bg-grid-white/[0.2] bg-grid-black/[0.2] ">
+        <div className="flex flex-col md:flex-col w-full  ">
+        <Banner/>
           <div
             style={{
-              height: '57vh',
+              height: '40vh',
+              width:'100vw',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'flex-start',
               justifyContent: 'center',
-              marginTop: '3vh',
+              marginTop: '1vh',
+              textAlign:'center',
+              alignContent:'center',
+              alignItems:'center'
             }}
-            className="w-full md:w-1/2 p-8 md:p-16 md:pl-32"
+            
           >
-            <h1 className="text-3xl md:text-5xl font-semibold mb-4 text-[#003399]">Join the</h1>
-            <h1 className="text-3xl md:text-5xl font-semibold mb-4 text-[#66CC33]">AI Samasya</h1>
-            <h1 className="text-3xl md:text-5xl font-semibold mb-4 text-[#003399]">Hackathon</h1>
-            <div className="mt-4 flex items-center">
-              <h1 className="text-3xl md:text-5xl font-semibold mr-4 text-[#003399]">to</h1>
-              <div style={{ position: 'relative' }}>
-                <Flipwords className="text-3xl md:text-5xl font-semibold text-[#66CC33]" />
-              </div>
-            </div>
+            <h1 className="text-3xl md:text-4xl font-semibold mb-4 text-[#003399]">
+          <span>Join the </span>
+          <span className="text-[#66CC33]">AI Samasya </span>
+          <span>Hackathon </span>
+   
+          <span>
+            to
+          </span>
+          </h1>
+          <div style={{ position: 'relative' }}>
+            <Flipwords className="text-3xl md:text-4xl font-semibold text-[#66CC33]" />
+          </div>
+            
             <Link href='https://forms.gle/LZ51Xn13rhdKDQYL8'>
               <button className="shadow-[0_0_10px_rgba(102,204,51,0.5)] text-white px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-[#66CC33] hover:bg-[#003399] hover:text-white transition duration-200 mt-4">
                 Register Now
@@ -59,7 +68,7 @@ export default function Home() {
             }}
             className="hidden md:block"
           >
-            <Image id="Floatimage" src={'/girl.png'} alt="pic" height={500} width={500} />
+          
           </div>
         </div>
         
@@ -75,25 +84,32 @@ export default function Home() {
           <div className="absolute inset-0 top-0 left-0 right-0 bg-gradient-to-b from-[#003399] to-transparent h-12 z-[-1]"></div>
           
           <div className="flex justify-center text-center">
-            <h2 className="text-2xl font-bold text-[#003399] dark:text-[#66CC33]">Event Partners</h2>
+            <h2 className="text-2xl font-bold text-[#003399] dark:text-[#66CC33]">Event Organisers</h2>
           </div>
           <div className="flex flex-col md:flex-row w-full md:w-1/2 justify-between items-center text-center mt-4 gap-10">
-            <Image src={'/ieee.png'} alt='ieee' width={200} height={200} />
-            <Image src={'/logo-final.png'} alt='nsdc' width={200} height={200} />
-            <Image src={'/ihrd.jpg'} alt='ihrd' width={200} height={200} />
+          
+            <div>
+              <Image src={'/ihrd.jpg'} alt='nsdc' width={200} height={200} />
+              <p>IHRD</p>
+            </div>
+            <div>
+              <Image src={'/govt.png'} alt='ihrd' width={200} height={200} />
+              <p>Government of kerala</p>
+            </div>
           </div>
         </div>
       </div>
       
       <RegistrationFee />
-      <div className="flex justify-center text-center">
-            <h2 className=" font-bold mt-10 text-4xl text-[#003399] dark:text-[#66CC33]">Hackathon Timeline</h2>
+      <Prizes />
+          <div className="flex justify-center text-center">
+            <h2 className=" font-bold m-5 text-4xl text-[#003399] dark:text-[#66CC33]">Hackathon Timeline</h2>
           </div>
       <Timeline3/>
       <Infinite>
       </Infinite>
       <Theme/>
-      <Prizes />
+      <div style={{display:'flex',height:'1vh'}}></div>
       <Faq/>
       <div style={{height:'5vh'}}></div>
       <Footer/>

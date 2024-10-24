@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       style={{
-        backgroundColor: '#003399', // Dark blue background color
+        backgroundColor: '#0a233b', // Dark blue background color
         color: '#fff', // White text for contrast
         padding: '3rem 1rem',
       }}
@@ -23,7 +23,7 @@ const Footer = () => {
         {/* Contact Information */}
         <div style={{ marginBottom: '1.5rem' }}>
           <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>Contact Us</h2>
-          <p>Email: <a href="mailto:aiconclave91@gmail.com" style={{ color: '#66CC33' }}>aiconclave91@gmail.com</a></p>
+          <p>Email: <a href="mailto:aisamasya@mec.ac.in" style={{ color: '#66CC33' }}>aisamasya@mec.ac.in</a></p>
           <p>Phone: <a href="tel:+91 94461 32764" style={{ color: '#66CC33' }}>+91 94461 32764</a></p>
         </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
             <a href="/" style={{ color: '#66CC33', fontWeight: '500' }}>Home</a>
             <a href="/about" style={{ color: '#66CC33', fontWeight: '500' }}>About</a>
             <a href="/services" style={{ color: '#66CC33', fontWeight: '500' }}>Services</a>
-            <a href="/contact" style={{ color: '#66CC33', fontWeight: '500' }}>Contact</a>
+            <a href="mailto:aisamasya@mec.ac.in" style={{ color: '#66CC33', fontWeight: '500' }}>Contact</a>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@ const Footer = () => {
           color: '#66CC33',
         }}
       >
-        &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
+        &copy; {new Date().getFullYear()} Ai samasya. All rights reserved.
       </div>
     </footer>
   );
