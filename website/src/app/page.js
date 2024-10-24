@@ -101,10 +101,12 @@ export default function Home() {
       </div>
       
       <RegistrationFee />
-      <Prizes />
-          <div className="flex justify-center text-center">
-            <h2 className=" font-bold m-5 text-4xl text-[#003399] dark:text-[#66CC33]">Hackathon Timeline</h2>
-          </div>
+      <div>
+        <Prizes />
+      </div>
+      <div className="flex justify-center text-center  ">
+         <h2 className=" font-bold text-4xl text-[#003399] dark:text-[#66CC33]">Hackathon Timeline</h2>
+      </div>
       <Timeline3/>
       <Infinite>
       </Infinite>
