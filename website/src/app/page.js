@@ -14,7 +14,6 @@ import Code from'./Loaders/Code'
 import RegistrationFee from './RegistrationFees/RegistrationFee';
 
 export default function Home() {
-  const words = ["Journey", "Adventure", "Challenge", "Event"];
   
   return (
     <div className="flex flex-col ">
