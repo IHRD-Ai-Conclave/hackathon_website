@@ -20,6 +20,42 @@ const Footer = () => {
           textAlign: 'center',
         }}
       >
+        {/* Left Section: Technical Facilitators */}
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginBottom: '1.5rem'
+        }}>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem', color: 'white' }}>Technical Facilitators</h2>
+          <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{
+              backgroundColor: '#fff',
+              padding: '0.5rem',
+              borderRadius: '0.25rem',
+              width: '80px',
+              height: '80px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <img src="./nsdc.png" alt="Logo 1" />
+            </div>
+            <div style={{
+              backgroundColor: '#fff',
+              padding: '0.5rem',
+              borderRadius: '0.25rem',
+              width: '80px',
+              height: '80px',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <img src="./ieee.png" alt="Logo 2" />
+            </div>
+          </div>
+        </div>
+
         {/* Contact Information */}
         <div style={{ marginBottom: '1.5rem' }}>
           <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>Contact Us</h2>
@@ -68,7 +104,7 @@ const Footer = () => {
           color: '#66CC33',
         }}
       >
-        &copy; {new Date().getFullYear()} Ai samasya. All rights reserved.
+        &copy; {new Date().getFullYear()} Ai Samasya. All rights reserved.
       </div>
     </footer>
   );
