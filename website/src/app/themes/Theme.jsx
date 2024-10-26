@@ -38,7 +38,9 @@ function Theme() {
   return (
     <div className='flex flex-col gap-5 items-center justify-center'>
       {/* Hackathon title */}
-      <h2 className='text-2xl sm:text-3xl font-bold mb-4 text-[#003399]'>Hackathon themes</h2>
+
+      <h2 className='text-2xl sm:text-3xl font-bold mb-4 text-[#66CC33]'>Hackathon Themes</h2>
+
       
       {/* Main container */}
       <div className='w-screen min-h-[20vh] sm:min-h-[90vh] flex flex-col justify-center items-center bg-[#003399]'>
