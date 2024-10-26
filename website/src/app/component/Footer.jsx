@@ -60,7 +60,7 @@ const Footer = () => {
         <div style={{ marginBottom: '1.5rem' }}>
           <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>Contact Us</h2>
           <p>Email: <a href="mailto:aisamasya@mec.ac.in" style={{ color: '#66CC33' }}>aisamasya@mec.ac.in</a></p>
-          <p>Phone: <a href="tel:+91 94461 32764" style={{ color: '#66CC33' }}>+91 94461 32764</a></p>
+          <p>Phone: <a href="tel:+91 94461 32764" style={{ color: '#66CC33' }}>+91 94461 32764, 9895999790 , 9895421367</a></p>
         </div>
 
         {/* Social Media Links */}
@@ -87,8 +87,8 @@ const Footer = () => {
           <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>Quick Links</h2>
           <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <a href="/" style={{ color: '#66CC33', fontWeight: '500' }}>Home</a>
-            <a href="/about" style={{ color: '#66CC33', fontWeight: '500' }}>About</a>
-            <a href="/services" style={{ color: '#66CC33', fontWeight: '500' }}>Services</a>
+            <a href="#timeline" style={{ color: '#66CC33', fontWeight: '500' }}>Timeline</a>
+            <a href="#prizes" style={{ color: '#66CC33', fontWeight: '500' }}>Prizes</a>
             <a href="mailto:aisamasya@mec.ac.in" style={{ color: '#66CC33', fontWeight: '500' }}>Contact</a>
           </div>
         </div>
