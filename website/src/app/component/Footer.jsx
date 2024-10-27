@@ -99,16 +99,15 @@ const Footer = () => {
           color: '#66CC33',
         }}
       >
-        <div style={{display:'flex',width:'70vw',justifyContent:'space-between', flexDirection: window.innerWidth < 768 ? 'column' : 'row',gap:'3vh'}}>
-        <div>
-        Copyright © Institute of Human Resources Development (IHRD)
-        </div>
-       <div>
-       Website Designed and Maintained by NSDC MEC
-       </div>
+      <div className="flex flex-col md:flex-row w-[70vw] justify-between gap-[3vh]">
+  <div>
+    Copyright © Institute of Human Resources Development (IHRD)
+  </div>
+  <div>
+    Website Designed and Maintained by IT Division, IHRD, Trivandrum
+  </div>
+</div>
 
-        </div>
-      
 
  
       </div>
