@@ -78,11 +78,11 @@ export default function Home() {
           
             <div>
               <Image src={'/ihrd.jpg'} alt='nsdc' width={200} height={200} />
-              <p>IHRD</p>
+              <p>Institute of Human Resources<br /> Development</p>
             </div>
             <div>
               <Image src={'/govt.png'} alt='ihrd' width={200} height={200} />
-              <p>Government of Kerala</p>
+              <p>Department Of Higher Education<br /> under Government Of Kerala</p>
             </div>
           </div>
         </div>

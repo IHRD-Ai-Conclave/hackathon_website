@@ -24,7 +24,7 @@ export const Timeline = ({ data }) => {
 
   return (
     <div className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10" ref={containerRef}>
-      <div ref={ref} className="relative w-5xl mx-auto pb-16">
+      <div ref={ref} className="relative max-w-5xl mx-auto pb-16">
         {data.map((item, index) => (
           <div key={index} className="flex justify-start pt-12 md:pt-24 md:gap-6">
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-32 self-start max-w-xs lg:max-w-sm md:w-full">
