@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram,FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -65,19 +65,10 @@ const Footer = () => {
 
         {/* Social Media Links */}
         <div style={{ marginBottom: '1.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>Follow Us</h2>
+          <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>Know More About  Us</h2>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
-              <FaFacebookF size={28} />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
-              <FaTwitter size={28} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
-              <FaLinkedinIn size={28} />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
-              <FaInstagram size={28} />
+            <a href="https://www.youtube.com/@ihrdtechminds" target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }}>
+              <FaYoutube size={28} />
             </a>
           </div>
         </div>
@@ -88,7 +79,7 @@ const Footer = () => {
           <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <a href="/" style={{ color: '#66CC33', fontWeight: '500' }}>Home</a>
             <a href="#timeline" style={{ color: '#66CC33', fontWeight: '500' }}>Timeline</a>
-            <a href="#prizes" style={{ color: '#66CC33', fontWeight: '500' }}>Prizes</a>
+            <a href="#prize" style={{ color: '#66CC33', fontWeight: '500' }}>Prizes</a>
             <a href="mailto:aisamasya@mec.ac.in" style={{ color: '#66CC33', fontWeight: '500' }}>Contact</a>
           </div>
         </div>
@@ -98,13 +89,28 @@ const Footer = () => {
       <div
         style={{
           borderTop: '1px solid #66CC33',
+          justifyContent:'space-between',
+          display:'flex',
+          justifyItems:'center',
+          justifyContent:'center',
           padding: '1rem 0',
           textAlign: 'center',
           fontSize: '0.875rem',
           color: '#66CC33',
         }}
       >
-        &copy; {new Date().getFullYear()} Ai Samasya. All rights reserved.
+        <div style={{display:'flex',width:'70vw',justifyContent:'space-between', flexDirection: window.innerWidth < 768 ? 'column' : 'row',gap:'3vh'}}>
+        <div>
+        Copyright © Institute of Human Resources Development (IHRD)
+        </div>
+       <div>
+       Website Designed and Maintained by NSDC MEC
+       </div>
+
+        </div>
+      
+
+ 
       </div>
     </footer>
   );
