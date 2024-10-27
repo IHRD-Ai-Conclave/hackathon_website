@@ -20,6 +20,17 @@ const Faq = () => {
         <Collapsible title="What is the selection criteria for shortlisting?">
              Shortlisting will be based on your github profile.
            </Collapsible>
+
+           <Collapsible title="What facilities are provided during the event?">
+          Participants will have access to food and internet. Please note that accommodation will not be provided.
+        </Collapsible>
+
+
+        <Collapsible title="What should participants bring? ">
+        Make sure to bring your own laptop, along with any other necessary tools or equipment.
+        </Collapsible>
+
+
         <Collapsible title="Is this hackathon a standalone program?">
           No, the hackathon is part of the IHRD GenAI Conclave 2.0.
         </Collapsible>
