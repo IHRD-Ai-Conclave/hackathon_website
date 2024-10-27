@@ -57,19 +57,7 @@ export default function Home() {
               </button>
             </Link>
           </div>
-          
-          <div
-            style={{
-              width: '50vw',
-              paddingTop: '4vh',
-              paddingBottom: '4vh',
-              overflow: 'hidden',
-              borderRadius: '30px',
-            }}
-            className="hidden md:block"
-          >
-          
-          </div>
+        
         </div>
         
         <div className="relative w-full">
@@ -84,7 +72,7 @@ export default function Home() {
           <div className="absolute inset-0 top-0 left-0 right-0 bg-gradient-to-b from-[#003399] to-transparent h-12 z-[-1]"></div>
           
           <div className="flex justify-center text-center">
-            <h2 className="text-2xl font-bold text-[#003399] dark:text-[#66CC33]">Event Organisers</h2>
+            <h1 className="text-4xl font-bold text-[#003399] dark:text-[#66CC33]">Event Organisers</h1>
           </div>
           <div className="flex flex-col md:flex-row w-full md:w-1/2 justify-between items-center text-center mt-4 gap-10">
           
