@@ -72,9 +72,9 @@ export default function Home() {
           <div className="absolute inset-0 top-0 left-0 right-0 bg-gradient-to-b from-[#003399] to-transparent h-12 z-[-1]"></div>
           
           <div className="flex justify-center text-center">
-            <h1 className="text-4xl font-bold text-[#003399] dark:text-[#66CC33]">Event Organisers</h1>
+            <h1 className="text-4xl font-bold text-[#003399] dark:text-[#66CC33] pb-10">Event Organisers</h1>
           </div>
-          <div className="flex flex-col md:flex-row w-full md:w-1/2 justify-between items-center text-center mt-4 gap-10">
+          <div className="flex flex-col md:flex-row w-full md:w-1/2 justify-between items-center text-center mt-4 gap-10 pb-24">
           
             <div>
               <Image src={'/ihrd.jpg'} alt='nsdc' width={200} height={200} />
