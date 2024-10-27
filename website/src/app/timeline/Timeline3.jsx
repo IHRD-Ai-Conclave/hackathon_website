@@ -6,13 +6,13 @@ export default function TimelineDemo() {
     {
       title: "26-10-2024",
       content: (
-        <div className="flex flex-col">
-          <p className="text-gradient font-bold text-base md:text-lg mb-2 ">
+        <div className="flex flex-col gap-4">
+          <p className="text-gradient font-bold text-base md:text-lg  ">
            <u>
             Registration Starts
             </u>
           </p>
-          <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
+          <p className="text-gradient text-base md:text-lg font-medium mb-6 ">
             Form a team of 2-4 and register.
           </p>
         </div>

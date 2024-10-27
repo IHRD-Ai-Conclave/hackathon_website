@@ -80,11 +80,52 @@ li:before {
 }
 /* Gradient text class */
 
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+}
 
+.marquee-content {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite; /* Adjust duration for speed */
+}
 
+.marquee-text {
+  display: inline-block;
+  padding-left: 100px; /* Space between repeated text */
+}
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
+/* Enhanced transparent overlay on both ends of the marquee box */
+.marquee-container::before,
+.marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px; /* Increased fade width for stronger effect */
+  pointer-events: none;
+  z-index: 10; /* Ensures it overlays content */
+}
 
+.marquee-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 51, 153, 1), rgba(0, 51, 153, 0.3), rgba(0, 51, 153, 0)); /* Left fade with extended stops */
+}
+
+.marquee-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 51, 153, 1), rgba(0, 51, 153, 0.3), rgba(0, 51, 153, 0)); /* Right fade with extended stops */
+}
 
 
 
