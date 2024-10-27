@@ -27,7 +27,7 @@ const Faq = () => {
 
 
         <Collapsible title="What should participants bring? ">
-        Make sure to bring your own laptop, along with any other necessary tools or equipment.
+           Make sure to bring your own laptop, along with any other necessary tools or equipment.
         </Collapsible>
 
 
