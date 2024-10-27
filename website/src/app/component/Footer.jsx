@@ -104,7 +104,7 @@ const Footer = () => {
     Copyright © Institute of Human Resources Development (IHRD)
   </div>
   <div>
-    Website Designed and Maintained by IT Division, IHRD, Trivandrum
+    Website Designed and Maintained by NSDC MEC
   </div>
 </div>
 
