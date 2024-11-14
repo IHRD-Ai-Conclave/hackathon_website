@@ -13,7 +13,7 @@ import Link from 'next/link';
 import Code from'./Loaders/Code'
 import RegistrationFee from './RegistrationFees/RegistrationFee';
 import Banner from './component/Banner'
-
+import Deadline from './component/Deadline'
 export default function Home() {
   
   return (
@@ -87,8 +87,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+      <div className="flex flex-col lg:flex-row items-center  lg:space-x-14 space-y-8 lg:space-y-0 max-w-4xl mx-auto p-6">
       <RegistrationFee />
+      <Deadline/>
+      </div>
       <div>
         <Prizes />
       </div>
