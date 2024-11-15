@@ -15,8 +15,7 @@ RUN npm install
 COPY . .
 
 # Build the Next.js application
-RUN npm run build
 
 # Set the command to run the Next.js app in production mode
-CMD ["npm", "start"]
+CMD ["npm", "run","dev"]
 

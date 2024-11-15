@@ -10,7 +10,7 @@ services:
       - _app_data:/app
     environment:
       - NODE_ENV=production
-      - VIRTUAL_HOST=aisamsya.ihrd.ac.in
+      - VIRTUAL_HOST=aisamasya.ihrd.ac.in
     restart: unless-stopped
 
 volumes:
