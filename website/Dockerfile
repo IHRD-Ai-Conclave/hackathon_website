@@ -16,6 +16,6 @@ COPY . .
 
 # Build the Next.js application
 
-# Set the command to run the Next.js app in production mode
+# Set the command to run the Next.js app in dev mode
 CMD ["npm", "run","dev"]
 
