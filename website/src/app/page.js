@@ -103,6 +103,7 @@ export default function Home() {
       <Faq/>
       <div style={{height:'5vh'}}></div>
       <Footer/>
+  
     </div>
   );
 }
