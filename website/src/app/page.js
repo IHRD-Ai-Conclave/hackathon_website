@@ -100,6 +100,7 @@ export default function Home() {
       <Timeline3/>
       <Infinite>
       </Infinite>
+      
       <Theme/>
       <div style={{display:'flex',height:'1vh'}}></div>
       <Faq/>

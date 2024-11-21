@@ -33,6 +33,8 @@ module.exports = {
       animation: {
         shimmer: 'shimmer 2s linear infinite',
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        float: 'float 5s ease-in-out infinite',
+
       },
       keyframes: {
         shimmer: {
@@ -47,6 +49,10 @@ module.exports = {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
           },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
       },
     },
