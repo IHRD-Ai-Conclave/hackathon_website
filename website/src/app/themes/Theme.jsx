@@ -34,7 +34,7 @@ function AIEducationTheme() {
           </h1>
           <p className="text-lg md:text-xl text-white/95 leading-relaxed">
             All hackathon projects will focus on the theme{" "}
-            <span className="font-semibold text-white">"AI in Education."</span>{" "}
+            <span className="font-semibold text-white">&quot;AI in Education.&quot;</span>{" "}
             The full problem statement will be revealed exclusively at the venue, sparking creativity and innovation
             right <span className="font-bold">from the start!</span>
           </p>
