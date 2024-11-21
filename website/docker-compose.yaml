@@ -1,0 +1,22 @@
+version: "3.2"
+services:
+  hackathon-website:
+    image: hackathon-website
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hackathon_website_container
+    volumes:
+      - _app_data:/app
+    environment:
+      - NODE_ENV=development
+      - VIRTUAL_HOST=aisamasya.ihrd.ac.in
+    restart: unless-stopped
+
+volumes:
+  _app_data:
+
+networks:
+  default:
+    external:
+      name: mec

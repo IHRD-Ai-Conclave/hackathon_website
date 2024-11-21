@@ -19,7 +19,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "12-11-2024",
+      title: "18-11-2024",
       content: (
         <div className="flex flex-col items-center">
           <p className="text-gradient text-base md:text-lg font-medium mb-4 ">
