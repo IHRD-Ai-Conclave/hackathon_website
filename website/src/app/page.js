@@ -100,11 +100,13 @@ export default function Home() {
       <Timeline3/>
       <Infinite>
       </Infinite>
+      
       <Theme/>
       <div style={{display:'flex',height:'1vh'}}></div>
       <Faq/>
       <div style={{height:'5vh'}}></div>
       <Footer/>
+  
     </div>
   );
 }
